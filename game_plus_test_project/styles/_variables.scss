@@ -1,0 +1,13 @@
+@function toRem($value) {
+  $remValue: ($value / 16) + rem; 
+  @return $remValue;
+}
+
+  $green: #76b900 !default;
+  $white: #ffffff !default;
+  $darkgrey: #1e1e1e !default;
+  $global-font-family: GreycliffCF;
+  $global-font-size: toRem(16);
+
+
+  
