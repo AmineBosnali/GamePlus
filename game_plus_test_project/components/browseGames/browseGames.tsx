@@ -23,10 +23,10 @@ const BrowseGames = () => {
             <Col xs={12} sm={12} md={{ span: 8, offset: 2 }} lg={{ span: 8, offset: 2 }} className={styles.filterCards}>
                 <Row>
                     <Col xs={12} sm={12} md={4} lg={4}>
-                      <CheckFilterCard/>
+                        <CheckFilterCard />
                     </Col>
                     <Col xs={12} sm={12} md={8} lg={8} className={styles.cardBgColor}>
-                        <FilterCard/>
+                        <FilterCard />
                     </Col>
                 </Row>
             </Col>

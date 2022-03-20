@@ -28,7 +28,7 @@ const FilterCard: React.FC<CardProps> = (props) => {
                             <ListItem text="Lorem ipsum dolor sit" />
                         </dl>
                     </Col>
-                    <Col md={2} lg={2}></Col>
+                    <Col md={1} lg={1}></Col>
                     <Col xs={12} sm={12} md={{ span: 3, offset: 1 }} lg={{ span: 4, offset: 1 }}>
                         <dl>
                             <ListItem text="Lorem ipsum dolor sit" />

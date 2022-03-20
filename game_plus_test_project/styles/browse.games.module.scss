@@ -82,7 +82,6 @@
 
 .cardBgColor {
   div{
-    margin-left: toRem(10);
     background-color: $darkgrey;
   }
 }
@@ -91,6 +90,7 @@
   width: toRem(60);
   height: toRem(60);
   margin-top: toRem(15);
+  margin-left: toRem(50);
   margin-bottom: toRem(5);
   object-fit: contain;
 }
