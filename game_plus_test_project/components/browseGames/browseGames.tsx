@@ -1,7 +1,8 @@
-import { Col, Dropdown, Form, InputGroup, ListGroup, Row } from "react-bootstrap";
+import { Card, Col, Dropdown, Row } from "react-bootstrap";
 import Image from 'next/image';
 import styles from '../../styles/browse.games.module.scss';
-import CheckBox from "./checkbox";
+import FilterCard from "./filterCard";
+import CheckFilterCard from "./checkFilterCard";
 const BrowseGames = () => {
 
     return (
@@ -19,33 +20,15 @@ const BrowseGames = () => {
                     </Dropdown.Menu>
                 </Dropdown>
             </Col>
-            <Col xs={12} sm={12} md={{ span: 8, offset: 2 }} lg={{ span: 8, offset: 2 }} className={styles.filtersRectangle}>
+            <Col xs={12} sm={12} md={{ span: 8, offset: 2 }} lg={{ span: 8, offset: 2 }} className={styles.filterCards}>
                 <Row>
-                <dl>
-                    <dt className={styles.listTitle}>State</dt>
-                    <CheckBox text="Available" />
-                    <CheckBox text="Patching" />
-                    <CheckBox text="Maintanence" />
-                    <dt className={styles.listTitle}>Genre Filters</dt>
-                    <CheckBox text="Shooters" />
-                    <CheckBox text="Action" />
-                    <CheckBox text="RPG" />
-                    <CheckBox text="Racing" />
-                    <CheckBox text="MOBA/MMO" />
-                    <CheckBox text="Simulation" />
-                    <CheckBox text="Strategy" />
-                    <CheckBox text="Sports" />
-                    <CheckBox text="Kids/Family" />
-                    <CheckBox text="Casual" />
-                    <CheckBox text="Demo" />
-                    <CheckBox text="Horror" />
-                    <CheckBox text="Platformer" />
-                    <CheckBox text="Battle Royale" />
-                    <CheckBox text="Adventure" />
-                    <CheckBox text="Open World" />
-                </dl>
-                <div className="cardBgColor">test</div>
-                </Row>            
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <CheckFilterCard/>
+                    </Col>
+                    <Col xs={12} sm={12} md={8} lg={8} className={styles.cardBgColor}>
+                        <FilterCard/>
+                    </Col>
+                </Row>
             </Col>
         </Row>
     )

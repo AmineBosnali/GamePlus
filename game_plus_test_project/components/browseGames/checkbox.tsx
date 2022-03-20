@@ -9,8 +9,8 @@ interface CheckBoxProps {
 const Checkbox: React.FC<CheckBoxProps> = (props) => {
   return (
     <dt className={styles.checkboxRectangle}>
-      <img src="/checkbox_icon.svg"
-        className={styles.checkbox} /><span className={styles.text}>{props.text}</span>
+         <input type="checkbox" className={styles.checkbox} value="Bike"/>
+         <span className={styles.text}>{props.text}</span>       
     </dt>
   )
 }

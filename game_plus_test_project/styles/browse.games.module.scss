@@ -38,9 +38,11 @@
   }
 
   .filtersRectangle {
-    width: toRem(386);
-    height: toRem(1142);
     background-color: $darkgrey;
+  }
+
+  .filterCards{
+    margin-top: toRem(-370);
   }
 
   .listTitle {
@@ -62,19 +64,13 @@
     background-color: $darkgrey;
     margin-top: toRem(21);
     margin-left: toRem(30);
-    .checkbox{
-      width: toRem(21);
-      height: toRem(21);
-      object-fit: contain;
-      border: solid 1px #afafaf;
-  }
 
   .text {
     width: toRem(282);
     height: toRem(24);
-    margin-left: toRem(20);
+    margin-left: toRem(37);
     font-family: GreycliffCF-Regular;
-    font-size: toRem(17);
+    font-size: toRem(19);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -85,9 +81,30 @@
 }
 
 .cardBgColor {
-  width: toRem(794);
-  height: toRem(414);
-  margin: toRem(0) toRem(0) toRem(30);
-  padding: toRem(30);
-  background-color: $darkgrey;
+  div{
+    margin-left: toRem(10);
+    background-color: $darkgrey;
+  }
+}
+
+.polygon {
+  width: toRem(60);
+  height: toRem(60);
+  margin-top: toRem(15);
+  margin-bottom: toRem(5);
+  object-fit: contain;
+}
+
+.filterBoxListElement {
+  width: toRem(262);
+  height: toRem(19);
+  margin-top: toRem(30);
+  font-family: $global-font-family;
+  font-size: toRem(16);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #afafaf;
 }

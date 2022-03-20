@@ -1,7 +1,30 @@
 @import "~bootstrap/scss/bootstrap";
+@import '_variables.scss';
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: GreycliffCF;
+}
+
+input[type='checkbox']{
+  width: toRem(21);
+  height: toRem(21);
+  position: absolute;  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid #afafaf;
+  box-shadow: none;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1em;
+  background: $darkgrey;
+}
+
+input[type='checkbox']:checked:after {
+  content: '✔';
+  color: $white !important;
+  background: $green;
 }
