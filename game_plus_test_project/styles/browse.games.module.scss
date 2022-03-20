@@ -1,0 +1,93 @@
+@import '_variables.scss';
+
+.bgColor {
+    height:toRem(1592);
+    background-color: $black;
+  }
+
+.browseGames {
+    margin-top: toRem(64);
+    font-family: $global-font-family;
+    font-size: toRem(28);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white;  
+  }
+  .filterGamesBox{
+        text-align: right;
+
+        .filterGames {   
+          width: toRem(142);
+          height: toRem(51);
+          padding: toRem(16) toRem(16) toRem(15);
+          margin-top: toRem(51);
+          background-color: $darkgrey;
+          border-color: $darkgrey;
+          color: #afafaf;
+          font-size: toRem(18);
+          font-family: $global-font-family;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+      }
+  }
+
+  .filtersRectangle {
+    width: toRem(386);
+    height: toRem(1142);
+    background-color: $darkgrey;
+  }
+
+  .listTitle {
+    height: toRem(29);
+    margin-top: toRem(45);
+    margin-left: toRem(30);
+    font-family: GreycliffCF-DemiBold;
+    font-size: toRem(21);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #afafaf;
+    background-color: $darkgrey;
+  }
+
+  .checkboxRectangle{
+    background-color: $darkgrey;
+    margin-top: toRem(21);
+    margin-left: toRem(30);
+    .checkbox{
+      width: toRem(21);
+      height: toRem(21);
+      object-fit: contain;
+      border: solid 1px #afafaf;
+  }
+
+  .text {
+    width: toRem(282);
+    height: toRem(24);
+    margin-left: toRem(20);
+    font-family: GreycliffCF-Regular;
+    font-size: toRem(17);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #afafaf;
+  }
+}
+
+.cardBgColor {
+  width: toRem(794);
+  height: toRem(414);
+  margin: toRem(0) toRem(0) toRem(30);
+  padding: toRem(30);
+  background-color: $darkgrey;
+}

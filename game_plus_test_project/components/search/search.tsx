@@ -2,7 +2,7 @@ import { Col, Form, InputGroup, Row } from "react-bootstrap";
 import Image from 'next/image';
 import styles from '../../styles/search.module.scss';
 
-const banner = () => {
+const Search = () => {
 
   return (
     <Row className={styles.gfnMotifBackgroundHero}>
@@ -26,4 +26,4 @@ const banner = () => {
     </Row>
   )
 }
-export default banner;
+export default Search;

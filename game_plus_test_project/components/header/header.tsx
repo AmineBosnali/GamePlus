@@ -6,7 +6,7 @@ import MenuButtonPlay from './buttonPlay';
 import styles from '../../styles/header.module.scss';
 import { useRouter } from "next/router";
 
-const header = () => {
+const Header = () => {
   const router = useRouter();
   return (
     <Navbar collapseOnSelect bg="light" className={styles.bgHeader}>
@@ -38,4 +38,4 @@ const header = () => {
     </Navbar>
   )
 }
-export default header;
+export default Header;
