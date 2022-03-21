@@ -1,16 +1,7 @@
 @import '_variables.scss';
 
-.gfnMotifBackgroundHero {
-    height: toRem(400);
-    margin-top: toRem(10);
-    background-color:$darkgrey;
-  }
   .searchBox{
-      margin-top: toRem(80);
-
       .searchTitle {
-        width: toRem(793);
-        height: toRem(48);
         font-family: $global-font-size;
         font-size: toRem(40);
         font-weight: bold;
@@ -23,8 +14,6 @@
       }
 
       .searchDescription {
-        width: toRem(793);
-        height: toRem(52);
         margin: toRem(15) toRem(1) toRem(49) toRem(0);
         font-family:GreycliffCF-Regular;
         font-size: toRem(20);
@@ -43,8 +32,7 @@
   }
 
   .searchInput {
-    width: toRem(793);
-    height: toRem(56);
+    height: toRem(60);
     font-family:GreycliffCF-Regular;
     font-size: toRem(20);
     color:#8e9fad;

@@ -1,0 +1,89 @@
+@import '_variables.scss';
+
+.rectangleBlack {
+    height: toRem(41);
+    background-color: $darkgrey;
+  }
+
+.rectangleWhite{
+    height: toRem(114);
+    background-color: $white;
+  }
+
+  .footerBlackBox{
+    margin-top: toRem(10);
+  }
+
+  .footerBlackItem {
+    font-family: $global-font-family;
+    font-size: toRem(13);
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    color: $white;
+  }
+
+  .footerBlackItem2 {
+    font-family: $global-font-family;
+    font-size: toRem(13);
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: right;
+    color: $white;
+  }
+
+  .footerWhiteBox {
+    margin-top: toRem(25);
+    font-family: $global-font-family;
+    font-size: toRem(16);
+    font-weight: 30;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #666666;
+  }
+
+  .iconfacebook {
+    width: toRem(8);
+    height: toRem(16);
+    object-fit: contain;
+  }
+
+  .icontwitter {
+    width: toRem(20);
+    height: toRem(16);
+    margin-left: toRem(15);
+    object-fit: contain;
+  }
+
+  .iconinstagram {
+    width: toRem(16);
+    height: toRem(16);
+    margin-left: toRem(15);
+    object-fit: contain;
+  }
+
+  .iconyoutube {
+    width: toRem(14);
+    height: toRem(16);
+    margin-left: toRem(15);
+    object-fit: contain;
+  }
+
+  .english {
+    margin-top: toRem(5);
+    font-family: $global-font-family;
+    font-size: toRem(15);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $darkgrey;
+  }

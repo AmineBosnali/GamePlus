@@ -1,12 +1,10 @@
 @import '_variables.scss';
 
 .bgColor {
-    height:toRem(1592);
     background-color: $black;
   }
 
 .browseGames {
-    margin-top: toRem(64);
     font-family: $global-font-family;
     font-size: toRem(28);
     font-weight: bold;
@@ -18,12 +16,8 @@
   }
   .filterGamesBox{
         text-align: right;
-
         .filterGames {   
-          width: toRem(142);
-          height: toRem(51);
-          padding: toRem(16) toRem(16) toRem(15);
-          margin-top: toRem(51);
+          padding: toRem(14) toRem(14) toRem(13);
           background-color: $darkgrey;
           border-color: $darkgrey;
           color: #afafaf;
@@ -41,13 +35,8 @@
     background-color: $darkgrey;
   }
 
-  .filterCards{
-    margin-top: toRem(-370);
-  }
-
   .listTitle {
-    height: toRem(29);
-    margin-top: toRem(45);
+    margin-top: toRem(25);
     margin-left: toRem(30);
     font-family: GreycliffCF-DemiBold;
     font-size: toRem(21);
@@ -87,18 +76,15 @@
 }
 
 .polygon {
-  width: toRem(60);
-  height: toRem(60);
   margin-top: toRem(15);
-  margin-left: toRem(50);
+  margin-left: toRem(25);
   margin-bottom: toRem(5);
   object-fit: contain;
 }
 
 .filterBoxListElement {
-  width: toRem(262);
-  height: toRem(19);
   margin-top: toRem(30);
+  margin-left: toRem(25);
   font-family: $global-font-family;
   font-size: toRem(16);
   font-weight: normal;

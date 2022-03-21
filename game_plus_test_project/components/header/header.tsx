@@ -9,32 +9,26 @@ import { useRouter } from "next/router";
 const Header = () => {
   const router = useRouter();
   return (
-    <Navbar collapseOnSelect bg="light" className={styles.bgHeader}>
-      {/* expand="sm" */}
+    <Navbar bg="light" expand="lg" className={styles.bgHeader}>
       <Navbar.Brand href="#">
         <img src="/logo.png"
           className={styles.logo}
         />
       </Navbar.Brand>
-      {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
-      <Navbar.Toggle
-        aria-controls="responsive-navbar-nav"
-      />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav
-          className="mr-auto"
-          style={{ maxHeight: '100px' }}
-          navbarScroll
-          activeKey={router.route}
+          className="me-auto"
+          // activeKey={router.route}
         >
           <MenuButton href="/" buttonName="Games" isVisibleSelect={true} />
           <MenuButton buttonName="MenuShip" isVisibleSelect={false} />
           <MenuButton buttonName="Dowload" isVisibleSelect={false} />
           <MenuButton buttonName="Blog" isVisibleSelect={false} />
           <MenuButton buttonName="Support" isVisibleSelect={false} />
+          <MenuButtonPlay />
         </Nav>
       </Navbar.Collapse>
-      <MenuButtonPlay />
     </Navbar>
   )
 }

@@ -1,24 +1,19 @@
 @import '_variables.scss';
 .logo {
-    width: toRem(317);
-    height: toRem(53);
-    margin: toRem(0) toRem(144) toRem(13) toRem(0);
+    max-width: toRem(317);
+    // margin-left: toRem(130);
     object-fit: contain;
   }
 
   .bgHeader {
-    width: toRem(1440);
-    height: toRem(80);
-    padding: toRem(14) toRem(119) 0 toRem(120);
     background-color: $white !important;
+    // max-height: toRem(65);
   }
 
   .menuButton {
-    width: toRem(56);
-    height: toRem(19);
-    margin: 0 toRem(40) toRem(10) 0;
+    // margin: 0 toRem(40) toRem(10) 0;
     font-family: GreycliffCF-DemiBold;
-    font-size: $global-font-size;
+    font-size: toRem(17);
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -34,9 +29,6 @@
   }
   
   .menuButtonActive{
-    width: toRem(56);
-    height: toRem(19);
-    margin: 0 toRem(40) toRem(10) 0;
     font-family: $global-font-family;
     font-size: $global-font-size;
     font-stretch: normal;
@@ -49,24 +41,23 @@
   }
 
   .path2 {
-    width: toRem(24);
-    height: toRem(20);
-    margin: toRem(10) toRem(56) toRem(0) toRem(16);
+    max-width: toRem(20);
+    max-height: toRem(26);
+    margin-left: toRem(8);
+    margin-top: toRem(8);
     object-fit: contain;
   }
  
   .register {
     width: toRem(185);
     height: toRem(40);  
-    margin: toRem(6) toRem(0) toRem(20) toRem(61);
-    padding: toRem(0) toRem(0.5);
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: toRem(0.57); 
     background-color: $green !important;
-
+    margin-left:toRem(140);
     p{
       color: $white !important;
       font-family: GreycliffCF-Bold;
