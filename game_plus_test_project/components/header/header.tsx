@@ -1,4 +1,4 @@
-import { Nav, Navbar } from "react-bootstrap";
+import { Col, Nav, Navbar } from "react-bootstrap";
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuButton from './button';
@@ -9,27 +9,33 @@ import { useRouter } from "next/router";
 const Header = () => {
   const router = useRouter();
   return (
-    <Navbar bg="light" expand="lg" className={styles.bgHeader}>
-      <Navbar.Brand href="#">
-        <img src="/logo.png"
-          className={styles.logo}
-        />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav
-          className="me-auto"
+    <Col md={12} lg={12}>
+      <Navbar bg="light" expand="lg" className={styles.bgHeader}>
+        <Col md={1} lg={1}></Col>
+        <Col md={2} lg={2}>
+          <Navbar.Brand href="#">
+            <img src="/logo.png"
+              className={styles.logo}
+            />
+          </Navbar.Brand>
+        </Col>
+        <Col md={1} lg={1}></Col>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav
+            className="me-auto"
           // activeKey={router.route}
-        >
-          <MenuButton href="/" buttonName="Games" isVisibleSelect={true} />
-          <MenuButton buttonName="MenuShip" isVisibleSelect={false} />
-          <MenuButton buttonName="Dowload" isVisibleSelect={false} />
-          <MenuButton buttonName="Blog" isVisibleSelect={false} />
-          <MenuButton buttonName="Support" isVisibleSelect={false} />
-          <MenuButtonPlay />
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+          >
+            <MenuButton href="/" buttonName="Games" isVisibleSelect={true} />
+            <MenuButton buttonName="MenuShip" isVisibleSelect={false} />
+            <MenuButton buttonName="Dowload" isVisibleSelect={false} />
+            <MenuButton buttonName="Blog" isVisibleSelect={false} />
+            <MenuButton buttonName="Support" isVisibleSelect={false} />
+            <MenuButtonPlay />
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Col>
   )
 }
 export default Header;
