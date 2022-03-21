@@ -3,7 +3,17 @@ import Image from 'next/image';
 import styles from '../../styles/browse.games.module.scss';
 import FilterCard from "./filterCard";
 import CheckFilterCard from "./checkFilterCard";
+import { fetchGame } from "../../features/gameSlice";
+import { useEffect, useState } from 'react';
+import { useAppDistpatch, useAppSelector } from '../../store';
+
 const BrowseGames = () => {
+
+    const gamesStore = useAppSelector((state) => state.game);
+    const dispatch = useAppDistpatch();
+    useEffect(() => {
+        dispatch(fetchGame())
+    }, [])
 
     return (
         <Row>
@@ -46,7 +56,7 @@ const BrowseGames = () => {
                                 <CheckFilterCard />
                             </Col>
                             <Col xs={12} sm={12} md={8} lg={8} className={styles.cardBgColor}>
-                                <FilterCard />
+                                <FilterCard games={gamesStore.data} />
                             </Col>
                         </Row>
                     </Col>
