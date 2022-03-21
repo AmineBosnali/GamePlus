@@ -11,15 +11,15 @@ const Header = () => {
   return (
     <Col md={12} lg={12}>
       <Navbar bg="light" expand="lg" className={styles.bgHeader}>
-        <Col md={1} lg={1}></Col>
-        <Col md={2} lg={2}>
+        <Col className='d-none d-lg-block' md={1} lg={1}></Col>
+        <Col className='d-none d-lg-block' md={2} lg={2}>
           <Navbar.Brand href="#">
             <img src="/logo.png"
               className={styles.logo}
             />
           </Navbar.Brand>
         </Col>
-        <Col md={1} lg={1}></Col>
+        <Col className='d-none d-lg-block' md={1} lg={1}></Col>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
@@ -31,9 +31,9 @@ const Header = () => {
             <MenuButton buttonName="Dowload" isVisibleSelect={false} />
             <MenuButton buttonName="Blog" isVisibleSelect={false} />
             <MenuButton buttonName="Support" isVisibleSelect={false} />
-            <MenuButtonPlay />
           </Nav>
         </Navbar.Collapse>
+        <Col className='d-none d-lg-block' md={2} lg={2}><MenuButtonPlay /></Col>
       </Navbar>
     </Col>
   )

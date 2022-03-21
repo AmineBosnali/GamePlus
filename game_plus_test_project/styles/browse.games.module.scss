@@ -13,9 +13,9 @@
     line-height: normal;
     letter-spacing: normal;
     color: $white;  
+    margin-bottom: toRem(20);
   }
   .filterGamesBox{
-        text-align: right;
         .filterGames {   
           padding: toRem(14) toRem(14) toRem(13);
           background-color: $darkgrey;
