@@ -1,12 +1,26 @@
 import { Card, Col, Form, InputGroup, Row } from "react-bootstrap";
 import Image from 'next/image';
 import styles from '../../styles/search.module.scss';
+import { useAppDistpatch, useAppSelector } from '../../store';
+import { fetchGames, search } from "../../features/gameSlice";
+import { useEffect, useState } from 'react';
+import Game from "../../models/game.model";
+import { useSelector } from "react-redux";
 
 const Search = () => {
+  const dispatch = useAppDistpatch();
+
+  useEffect(() => {
+    dispatch(fetchGames())
+  }, [])
+
+  const searchHandle = (e: string) => {
+    dispatch(search({ name: e }))
+  }
 
   return (
     <Row>
-      <Card style={{background: 'url(https://gameplus.com.tr/static/media/foot-banner.46c1fc4c.png) center / cover'}}>
+      <Card style={{ background: 'url(https://gameplus.com.tr/static/media/foot-banner.46c1fc4c.png) center / cover' }}>
         <Card.Body>
           <Col md={{ span: 6, offset: 3 }} xs={{ span: 12 }} className={styles.searchBox}>
             <br />
@@ -23,6 +37,7 @@ const Search = () => {
               <Form.Control
                 placeholder="Search Games"
                 className={styles.searchInput}
+                onChange={(e: any) => searchHandle(e.target.value)}
               />
             </InputGroup>
             <br />

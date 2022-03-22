@@ -78,19 +78,18 @@
 .polygon {
   margin-top: toRem(15);
   margin-left: toRem(25);
-  margin-bottom: toRem(5);
   object-fit: contain;
 }
+
 
 .filterBoxListElement {
   margin-top: toRem(30);
   margin-left: toRem(25);
   font-family: $global-font-family;
   font-size: toRem(16);
-  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height:3;
   letter-spacing: normal;
   color: #afafaf;
 }
