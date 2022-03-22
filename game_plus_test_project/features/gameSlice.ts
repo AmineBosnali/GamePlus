@@ -35,7 +35,7 @@ const gameSlice = createSlice({
         },
         filterCategories: (state, action) => {
             console.log(action);
-            // state.filterData = action.payload.name ? state.data.filter((element: Game) => element.name.toLocaleLowerCase().startsWith(action.payload.name.toLocaleLowerCase())) : state.data;
+            // state.filterData = action.payload.length > 0 ?  : state.data;
         }
     },
     extraReducers: (builder) => {
@@ -54,5 +54,5 @@ const gameSlice = createSlice({
         })
     }
 });
-export const { search,filterCategories } = gameSlice.actions;
+export const { search, filterCategories } = gameSlice.actions;
 export default gameSlice.reducer;

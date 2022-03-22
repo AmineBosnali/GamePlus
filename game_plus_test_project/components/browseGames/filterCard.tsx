@@ -1,6 +1,6 @@
 import { Card, Col, Row } from 'react-bootstrap';
 import styles from '../../styles/browse.games.module.scss';
-import ListItem from "./filterCardItem";
+import GameList from "./filterCardItem";
 import Game from "../../models/Game.model";
 import { useEffect, useState } from "react";
 
@@ -37,28 +37,14 @@ const FilterCard: React.FC<CardProps> = (props) => {
                             <Card.Body>
                                 <Row>
                                     <Col xs={12} sm={12} md={2} lg={2}>
-                                        <img src="/polygon.svg" className={styles.polygon}></img>
-                                        {gameGroupName}
+                                        <span className={styles.polygon}>{gameGroupName}</span>
                                     </Col>
                                 </Row>
-                                {/* <Row> */}
-                                   
-                                        <dl>
-                                            {[groupedGames[gameGroupName]].map((gameName: string, index) => {
-                                                return (
-                                                    <Row>
-                                                    <Col xs={12} sm={12} md={6} lg={6}>
-                                                    <ListItem text={gameName} />
-                                                    </Col>
-                                                    <Col xs={12} sm={12} md={6} lg={6}>
-                                                    <ListItem text={gameName} />
-                                                    </Col>
-                                                    </Row>
-                                                )
-                                            })}
-                                        </dl>
-                                   
-                                {/* </Row> */}
+                                    {[groupedGames[gameGroupName]].map((gameName: any) => {
+                                        return (
+                                            <GameList gameListByLetter={gameName} />
+                                        )
+                                    })}
                             </Card.Body>
                         </Card>
                         <br />

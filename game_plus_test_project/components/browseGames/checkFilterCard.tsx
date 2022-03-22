@@ -10,11 +10,6 @@ const CheckFilterCardItem = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     const dispatch = useAppDistpatch();
 
-    const gamesStore = useAppSelector((state) => state.game);
-    useEffect(() => {
-        dispatch(fetchGames())
-    }, [])
-
     useEffect(() => {
         dispatch(filterCategories(selectedCategories))
     }, [selectedCategories])

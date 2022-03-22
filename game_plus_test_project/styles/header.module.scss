@@ -20,10 +20,6 @@
     color: black !important;
     margin-left: toRem(7);
     margin-right: toRem(7);
-    // &:active:hover {
-    //   font-weight: 600;
-    //   color: $green !important;
-    // }
   }
   
   .menuButtonActive{
@@ -41,14 +37,13 @@
   .path2 {
     max-width: toRem(20);
     max-height: toRem(26);
+    margin-bottom: toRem(-29);
     margin-left: toRem(8);
-    margin-top: toRem(8);
     object-fit: contain;
   }
  
   .register {
     width: toRem(185);
-    // width: unset;
     height: toRem(40);  
     font-weight: bold;
     font-stretch: normal;

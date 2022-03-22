@@ -4,7 +4,7 @@ import styles from '../../styles/header.module.scss';
 
 interface ButtonProps {
     buttonName: string;
-    isVisibleSelect: boolean;
+    isVisibleSelect?: boolean;
     href?: string;
 }
 
@@ -12,19 +12,12 @@ const Button: React.FC<ButtonProps> = (props) => {
     return (
         <Nav.Link href={props.href} className={props.isVisibleSelect ? styles.menuButtonActive : styles.menuButton}>
             {props.buttonName}
-            {/* <Row>
-                <Col xl={12} md={12} sm={6} xs={6}>
-                    {props.buttonName}
-                </Col>
-               
-                    <Col xl={12} md={12} sm={3} xs={3}>
-                    {props.isVisibleSelect &&
-                        <img src="/menu_icon.svg"
-                            className={styles.path2}></img>
-                        }
-                    </Col>
-               
-            </Row> */}
+            <Col className='d-none d-lg-block' xs={0} sm={0}>
+                {props.isVisibleSelect &&
+                    <img src="/menu_icon.svg"
+                        className={styles.path2}></img>
+                }
+            </Col>
         </Nav.Link>
 
     )

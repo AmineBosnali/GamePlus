@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();
+
   return (
     <Col md={12} lg={12}>
       <Navbar bg="light" expand="lg" className={styles.bgHeader}>
@@ -27,10 +28,10 @@ const Header = () => {
           // activeKey={router.route}
           >
             <MenuButton href="/" buttonName="Games" isVisibleSelect={true} />
-            <MenuButton buttonName="MenuShip" isVisibleSelect={false} />
-            <MenuButton buttonName="Dowload" isVisibleSelect={false} />
-            <MenuButton buttonName="Blog" isVisibleSelect={false} />
-            <MenuButton buttonName="Support" isVisibleSelect={false} />
+            <MenuButton buttonName="MenuShip" />
+            <MenuButton buttonName="Dowload" />
+            <MenuButton buttonName="Blog" />
+            <MenuButton buttonName="Support" />
           </Nav>
         </Navbar.Collapse>
         <Col className='d-none d-lg-block' md={2} lg={2}><MenuButtonPlay /></Col>

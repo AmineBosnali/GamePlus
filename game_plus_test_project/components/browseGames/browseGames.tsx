@@ -29,10 +29,9 @@ const BrowseGames = () => {
                                 <Dropdown.Toggle id="dropdown-autoclose-true" className={styles.filterGames}>
                                     Title A-Z
                                 </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item href="#">Menu Item</Dropdown.Item>
-                                    <Dropdown.Item href="#">Menu Item</Dropdown.Item>
-                                    <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                                <Dropdown.Menu className={styles.filterGamesMenu}>
+                                    <Dropdown.Item className={styles.filterGamesMenuItem} href="#">Title A-Z</Dropdown.Item>
+                                    <Dropdown.Item className={styles.filterGamesMenuItem} href="#">Title Z-A</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Col>

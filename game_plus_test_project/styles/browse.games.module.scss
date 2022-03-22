@@ -29,6 +29,16 @@
           line-height: normal;
           letter-spacing: normal;
       }
+      .filterGamesMenu {   
+        background-color: $darkgrey;
+        .filterGamesMenuItem{
+          color: #afafaf;
+          &:hover {
+            background-color: $darkgrey;
+            color: $white;
+          }
+        }
+    }
   }
 
   .filtersRectangle {
@@ -97,20 +107,31 @@
 }
 
 .polygon {
-  margin-top: toRem(15);
-  margin-left: toRem(25);
-  object-fit: contain;
+    margin-top: toRem(15);
+    margin-left: toRem(16);
+    background: url(../public/polygon.svg);
+    display: block;
+    background-repeat: no-repeat;
+    width: toRem(60);
+    height: toRem(52);
+    font-size: toRem(30);
+    font-weight: 700;
+    text-align: center;
+    color: #1e1e1e;
+    padding-top: toRem(5);
+    text-transform: uppercase;
+    margin-bottom: toRem(30);
+
 }
 
 
 .filterBoxListElement {
-  margin-top: toRem(30);
-  margin-left: toRem(25);
-  font-family: $global-font-family;
+  margin-left: toRem(15);
+  font-family: GreycliffCF-Regular;
   font-size: toRem(16);
-  // font-stretch: normal;
-  // font-style: normal;
-  // line-height:3;
-  // letter-spacing: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:2.1;
+  letter-spacing: normal;
   color: #afafaf;
 }

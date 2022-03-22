@@ -20,3 +20,9 @@ input[type='checkbox']{
   font-size: toRem(18);
   background: $darkgrey;
 }
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $darkgrey !important;
+  border-color: $darkgrey !important;
+}
