@@ -10,7 +10,7 @@ interface GameState {
     data: Game[];
     loading: boolean;
     error: string;
-    searchData: Game[];
+    filterData: Game[];
 }
 
 mock.onGet("/games").reply(200, MockData);
@@ -23,7 +23,7 @@ const initialState: GameState = {
     data: [],
     loading: false,
     error: "",
-    searchData: [],
+    filterData: [],
 }
 
 const gameSlice = createSlice({
@@ -31,7 +31,11 @@ const gameSlice = createSlice({
     initialState,
     reducers: {
         search: (state, action) => {
-            state.searchData = action.payload.name ? state.data.filter((element: Game) => element.name.toLocaleLowerCase().startsWith(action.payload.name.toLocaleLowerCase())) : state.data;
+            state.filterData = action.payload.name ? state.data.filter((element: Game) => element.name.toLocaleLowerCase().startsWith(action.payload.name.toLocaleLowerCase())) : state.data;
+        },
+        filterCategories: (state, action) => {
+            console.log(action);
+            // state.filterData = action.payload.name ? state.data.filter((element: Game) => element.name.toLocaleLowerCase().startsWith(action.payload.name.toLocaleLowerCase())) : state.data;
         }
     },
     extraReducers: (builder) => {
@@ -41,7 +45,7 @@ const gameSlice = createSlice({
         });
         builder.addCase(fetchGames.fulfilled, (state, action: PayloadAction<any>) => {
             state.data = action.payload;
-            state.searchData = action.payload;
+            state.filterData = action.payload;
             state.loading = false;
         });
         builder.addCase(fetchGames.rejected, (state, action) => {
@@ -50,5 +54,5 @@ const gameSlice = createSlice({
         })
     }
 });
-export const { search } = gameSlice.actions;
+export const { search,filterCategories } = gameSlice.actions;
 export default gameSlice.reducer;

@@ -44,7 +44,7 @@ const BrowseGames = () => {
                                 <CheckFilterCard />
                             </Col>
                             <Col xs={12} sm={12} md={8} lg={8} className={styles.cardBgColor}>
-                                <FilterCard games={gamesStore.searchData} />
+                                <FilterCard games={gamesStore.filterData} />
                             </Col>
                         </Row>
                     </Col>

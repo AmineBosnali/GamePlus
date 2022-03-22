@@ -1,19 +1,13 @@
 import { Card, Col, Form, InputGroup, Row } from "react-bootstrap";
 import Image from 'next/image';
 import styles from '../../styles/search.module.scss';
-import { useAppDistpatch, useAppSelector } from '../../store';
+import { useAppDistpatch } from '../../store';
 import { fetchGames, search } from "../../features/gameSlice";
-import { useEffect, useState } from 'react';
-import Game from "../../models/game.model";
-import { useSelector } from "react-redux";
+import { useEffect } from 'react';
 
 const Search = () => {
   const dispatch = useAppDistpatch();
-
-  useEffect(() => {
-    dispatch(fetchGames())
-  }, [])
-
+  
   const searchHandle = (e: string) => {
     dispatch(search({ name: e }))
   }

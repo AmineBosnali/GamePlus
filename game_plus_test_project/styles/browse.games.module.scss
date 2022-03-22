@@ -69,6 +69,27 @@
   }
 }
 
+.filterCheckBox:before{
+  width: toRem(18);
+  height: toRem(18);
+  position: absolute;  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid #afafaf;
+  box-shadow: none;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1em;
+  background: $darkgrey;
+}
+
+.filterCheckBox:checked:before{
+  content: url(../public/okey_icon.svg);
+  background: $green;
+}
+
 .cardBgColor {
   div{
     background-color: $darkgrey;
@@ -87,9 +108,9 @@
   margin-left: toRem(25);
   font-family: $global-font-family;
   font-size: toRem(16);
-  font-stretch: normal;
-  font-style: normal;
-  line-height:3;
-  letter-spacing: normal;
+  // font-stretch: normal;
+  // font-style: normal;
+  // line-height:3;
+  // letter-spacing: normal;
   color: #afafaf;
 }

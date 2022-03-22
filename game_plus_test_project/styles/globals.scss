@@ -8,8 +8,8 @@ body {
 }
 
 input[type='checkbox']{
-  width: toRem(21);
-  height: toRem(21);
+  width: toRem(18);
+  height: toRem(18);
   position: absolute;  
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -17,14 +17,6 @@ input[type='checkbox']{
   appearance: none;
   outline: 1px solid #afafaf;
   box-shadow: none;
-  font-size: 0.8em;
-  text-align: center;
-  line-height: 1em;
+  font-size: toRem(18);
   background: $darkgrey;
-}
-
-input[type='checkbox']:checked:after {
-  content: '✔';
-  color: $white !important;
-  background: $green;
 }
