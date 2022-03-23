@@ -9,7 +9,7 @@
   }
 
   .menuButton {
-    font-family: GreycliffCF-DemiBold;
+    font-family: $global-font-family;
     font-size: toRem(17);
     font-weight: bold;
     font-stretch: normal;
@@ -54,7 +54,7 @@
     margin-left:toRem(30);
     p{
       color: $white !important;
-      font-family: GreycliffCF-Bold;
+      font-family: $global-font-family;
       font-size: $global-font-size;
       text-align: center;
       margin: toRem(10) toRem(0) toRem(10) toRem(0);

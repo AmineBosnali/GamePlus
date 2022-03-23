@@ -2,12 +2,11 @@ import { Card, Col, Form, InputGroup, Row } from "react-bootstrap";
 import Image from 'next/image';
 import styles from '../../styles/search.module.scss';
 import { useAppDistpatch } from '../../store';
-import { fetchGames, search } from "../../features/gameSlice";
-import { useEffect } from 'react';
+import { search } from "../../features/gameSlice";
 
 const Search = () => {
   const dispatch = useAppDistpatch();
-  
+
   const searchHandle = (e: string) => {
     dispatch(search({ name: e }))
   }

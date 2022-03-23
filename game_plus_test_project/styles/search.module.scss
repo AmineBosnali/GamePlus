@@ -15,7 +15,7 @@
 
       .searchDescription {
         margin: toRem(15) toRem(1) toRem(49) toRem(0);
-        font-family:GreycliffCF-Regular;
+        font-family:$global-font-family;
         font-size: toRem(20);
         font-weight: normal;
         font-stretch: normal;
@@ -33,7 +33,7 @@
 
   .searchInput {
     height: toRem(60);
-    font-family:GreycliffCF-Regular;
+    font-family:$global-font-family;
     font-size: toRem(20);
     color:#8e9fad;
     background-color: $white;

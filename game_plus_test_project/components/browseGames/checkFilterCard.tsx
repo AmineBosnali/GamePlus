@@ -15,29 +15,31 @@ const CheckFilterCardItem = () => {
     }, [selectedCategories])
 
     return (
-        <Card className={styles.filtersRectangle}>
-            <Card.Body>
-                <dl >
-                    <dt className={styles.listTitle}>Genre Filters</dt>
-                    {Categories.map((item: GameCategoryModel) => {
-                        return (
-                            <dt className={styles.checkboxRectangle}>
-                                <input type="checkbox" className={styles.filterCheckBox} value={item.name} onChange={(e) => {
-                                    if (e.target.checked && !selectedCategories.includes(e.target.value)) {
-                                        setSelectedCategories(prev => [e.target.value, ...prev]);
-                                    }
-                                    else if (!e.target.checked && selectedCategories.includes(e.target.value)) {
-                                        setSelectedCategories(prev => prev.filter(item => item !== e.target.value));
-                                    }
-                                }} />
-                                <span className={styles.text}>{item.name}</span>
-                            </dt>
-                        )
-                    })}
-                </dl>
-            </Card.Body>
-        </Card>
-
+        <>
+            <Card className={styles.filtersRectangle}>
+                <Card.Body>
+                    <dl >
+                        <dt className={styles.listTitle}>Genre Filters</dt>
+                        {Categories.map((item: GameCategoryModel) => {
+                            return (
+                                <dt className={styles.checkboxRectangle}>
+                                    <input type="checkbox" className={styles.filterCheckBox} value={item.name} onChange={(e) => {
+                                        if (e.target.checked && !selectedCategories.includes(e.target.value)) {
+                                            setSelectedCategories(prev => [e.target.value, ...prev]);
+                                        }
+                                        else if (!e.target.checked && selectedCategories.includes(e.target.value)) {
+                                            setSelectedCategories(prev => prev.filter(item => item !== e.target.value));
+                                        }
+                                    }} />
+                                    <span className={styles.text}>{item.name}</span>
+                                </dt>
+                            )
+                        })}
+                    </dl>
+                </Card.Body>
+            </Card>
+            <br />
+        </>
     )
 }
 export default CheckFilterCardItem;

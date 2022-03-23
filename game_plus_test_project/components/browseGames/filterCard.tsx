@@ -15,7 +15,6 @@ const FilterCard: React.FC<CardProps> = (props) => {
 
     useEffect(() => {
         let games = [...props.games];
-        games.sort();
         let groupedGames: any = {};
 
         games.map((game: Game) => {
@@ -40,11 +39,11 @@ const FilterCard: React.FC<CardProps> = (props) => {
                                         <span className={styles.polygon}>{gameGroupName}</span>
                                     </Col>
                                 </Row>
-                                    {[groupedGames[gameGroupName]].map((gameName: any) => {
-                                        return (
-                                            <GameList gameListByLetter={gameName} />
-                                        )
-                                    })}
+                                {[groupedGames[gameGroupName]].map((gameName: any) => {
+                                    return (
+                                        <GameList gameListByLetter={gameName} />
+                                    )
+                                })}
                             </Card.Body>
                         </Card>
                         <br />
