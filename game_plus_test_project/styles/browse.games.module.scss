@@ -1,0 +1,137 @@
+@import '_variables.scss';
+
+.bgColor {
+    background-color: $black;
+  }
+
+.browseGames {
+    font-family: $global-font-family;
+    font-size: toRem(28);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white;  
+    margin-bottom: toRem(20);
+  }
+  .filterGamesBox{
+        .filterGames {   
+          padding: toRem(14) toRem(14) toRem(13);
+          background-color: $darkgrey;
+          border-color: $darkgrey;
+          color: #afafaf;
+          font-size: toRem(18);
+          font-family: $global-font-family;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+      }
+      .filterGamesMenu {   
+        background-color: $darkgrey;
+        .filterGamesMenuItem{
+          color: #afafaf;
+          &:hover {
+                background-color: $darkgrey;
+            color: $white;
+          }
+        }
+    }
+  }
+
+  .filtersRectangle {
+    background-color: $darkgrey;
+  }
+
+  .listTitle {
+    margin-top: toRem(25);
+    margin-left: toRem(30);
+    font-family: $global-font-family;
+    font-size: toRem(21);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #afafaf;
+    background-color: $darkgrey;
+  }
+
+  .checkboxRectangle{
+    background-color: $darkgrey;
+    margin-top: toRem(21);
+    margin-left: toRem(30);
+
+  .text {
+    width: toRem(282);
+    height: toRem(24);
+    margin-left: toRem(37);
+    font-family: $global-font-family;
+    font-size: toRem(19);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #afafaf;
+  }
+}
+
+.filterCheckBox:before{
+  width: toRem(18);
+  height: toRem(18);
+  position: absolute;  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid #afafaf;
+  box-shadow: none;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1em;
+  background: $darkgrey;
+}
+
+.filterCheckBox:checked:before{
+  content: url(../public/okey_icon.svg);
+  background: $green;
+}
+
+.cardBgColor {
+  div{
+    background-color: $darkgrey;
+  }
+}
+
+.polygon {
+    margin-top: toRem(15);
+    margin-left: toRem(16);
+    background: url(../public/polygon.svg);
+    display: block;
+    background-repeat: no-repeat;
+    width: toRem(60);
+    height: toRem(52);
+    font-size: toRem(30);
+    font-weight: 700;
+    text-align: center;
+    color: #1e1e1e;
+    padding-top: toRem(5);
+    text-transform: uppercase;
+    margin-bottom: toRem(30);
+
+}
+
+
+.filterBoxListElement {
+  margin-left: toRem(15);
+  font-family: $global-font-family;
+  font-size: toRem(16);
+  font-stretch: normal;
+  font-style: normal;
+  line-height:2.1;
+  letter-spacing: normal;
+  color: #afafaf;
+}

@@ -1,0 +1,64 @@
+@import '_variables.scss';
+.logo {
+    max-width: toRem(317);
+    object-fit: contain;
+  }
+
+  .bgHeader {
+    background-color: $white !important;
+  }
+
+  .menuButton {
+    font-family: $global-font-family;
+    font-size: toRem(17);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: toRem(0.57);
+    text-align: center;
+    color: black !important;
+    margin-left: toRem(7);
+    margin-right: toRem(7);
+  }
+  
+  .menuButtonActive{
+    font-family: $global-font-family;
+    font-size: $global-font-size;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: toRem(0.57);
+    text-align: center;
+    font-weight: 600;
+    color: $green !important;
+  }
+
+  .path2 {
+    max-width: toRem(20);
+    max-height: toRem(26);
+    margin-bottom: toRem(-29);
+    margin-left: toRem(8);
+    object-fit: contain;
+  }
+ 
+  .register {
+    width: toRem(185);
+    height: toRem(40);  
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: toRem(0.57); 
+    background-color: $green !important;
+    margin-left:toRem(30);
+    p{
+      color: $white !important;
+      font-family: $global-font-family;
+      font-size: $global-font-size;
+      text-align: center;
+      margin: toRem(10) toRem(0) toRem(10) toRem(0);
+    }
+  }
+
+ 
